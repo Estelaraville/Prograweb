@@ -73,11 +73,6 @@ function activ(){
 }
 setTimeout(activ, 2000);
 
-function dir(a,b,c,d){
-    console.log(a,b,c,d)
-    dir(user.direccion.calle, user.direccion.no, user.direccion.colonia, user.direccion.delegación);
-}
-setTimeout(dir, 3000)
 //consola nombre apellidoP, apellidoM
 //alert activo
 //consola edad
