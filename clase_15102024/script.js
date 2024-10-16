@@ -26,7 +26,7 @@ function hello(){
     }
 }
  
-console.log(hello()()); */
+console.log(hello()()); 
 
 
 //MULTIPARÁMETROS
@@ -37,4 +37,50 @@ function add(x,y=0){
     }
     console.log(x+y);
 }
-add(5,undefined);
+add(5,undefined); 
+
+
+//PARÁMETRO DE TIPO CADENA
+function add(name){
+    console.log('Hola' +name);
+}
+add ("Clase 35"); */
+
+
+//OBJETOS
+const user = {
+    nombre: 'Elias',
+    appellidoP: 'Plutarco',
+    appellidoM: 'Calles',
+    edad: 17,
+    direccion: {
+        calle: 'Playa caleta',
+        no: 4342,
+        colonia: 'Roma',
+        delegación: 'Iztapalapa'
+    }, 
+    amigos: ['Raul','María'],
+    activo: true
+}
+
+function cosas(x, y, z){
+    console.log(x,y,z)
+}
+cosas(user.nombre, user.appellidoP,user.appellidoM )
+
+function activ(){
+    alert(user.activo)
+}
+setTimeout(activ, 2000);
+
+function dir(a,b,c,d){
+    console.log(a,b,c,d)
+    dir(user.direccion.calle, user.direccion.no, user.direccion.colonia, user.direccion.delegación);
+}
+setTimeout(dir, 3000)
+//consola nombre apellidoP, apellidoM
+//alert activo
+//consola edad
+//alert calle, numero, colonia, delegación
+//consola amigos
+
